@@ -14,7 +14,7 @@ import com.twitter.sdk.android.tweetui.UserTimeline;
         setContentView(R.layout.list_item);
 
         final UserTimeline userTimeline = new UserTimeline.Builder()
-        .screenName("fabric")
+        .screenName("rrudzinskipl")
         .build();
         final TweetTimelineListAdapter adapter = new TweetTimelineListAdapter.Builder(this)
         .setTimeline(userTimeline)
