@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">BullyHound</string>
-    <string name="button_send">Send</string>
+    <string-array name="bad_words">
+        <item>ugly</item>
+        <item>smelly</item>
+        <item>stupid</item>
+    </string-array>
 </resources>
