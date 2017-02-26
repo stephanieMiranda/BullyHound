@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 JsonParse tweets = new JsonParse(jsonString);
                 tweetList = tweets.getStatuses();
 
+                TweetAdapter adapter = new TweetAdapter(MainActivity.this, tweetList);
 
 
 
