@@ -5,4 +5,5 @@
         <item>smelly</item>
         <item>stupid</item>
     </string-array>
+    <string name="button_send">Send</string>
 </resources>
