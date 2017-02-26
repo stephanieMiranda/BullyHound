@@ -2,7 +2,9 @@ package com.example.rrudz.bullyhound;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-
+/*
+    Activity Shows a given watched users' timeline.
+ */
 public class TimelineActivity extends AppCompatActivity {
 
      // Note: Your consumer key and secret should be obfuscated in your source code before shipping.
