@@ -18,13 +18,14 @@ public class TimelineActivity extends ListActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         TwitterAuthConfig authConfig = new TwitterAuthConfig(TWITTER_KEY, TWITTER_SECRET);
         Fabric.with(this, new Twitter(authConfig));
-        setContentView(R.layout.list_item);
+        //setContentView(R.layout.list_item);
 
         final UserTimeline userTimeline = new UserTimeline.Builder()
-        .screenName("rrudzinskipl")
+        .screenName("SenSanders")
         .build();
         final TweetTimelineListAdapter adapter = new TweetTimelineListAdapter.Builder(this)
         .setTimeline(userTimeline)
