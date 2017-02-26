@@ -26,6 +26,7 @@ public class TimelineActivity extends ListActivity {
         final UserTimeline userTimeline = new UserTimeline.Builder()
         .screenName("rrudzinskipl")
         .build();
+
         final TweetTimelineListAdapter adapter = new TweetTimelineListAdapter.Builder(this)
         .setTimeline(userTimeline)
         .build();
