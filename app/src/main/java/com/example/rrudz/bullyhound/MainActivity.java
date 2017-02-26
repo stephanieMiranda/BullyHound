@@ -1,5 +1,6 @@
 package com.example.rrudz.bullyhound;
 
+import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -9,7 +10,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     private String TAG = MainActivity.class.getSimpleName();
     private ListView list;
@@ -20,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_item);
-
         tweetList = new ArrayList<>();
         list = (ListView) findViewById(R.id.list_view);
 

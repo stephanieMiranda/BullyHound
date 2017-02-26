@@ -1,27 +1,28 @@
 package com.example.rrudz.bullyhound;
 
-
 public class Tweet {
+	String tweetBy;
+	String tweet;
 
-    public String mUserName;
-    public String mMessage;
-    public boolean mIsBadTweet;
+	public Tweet(String tweetBy, String tweet) {
+		this.tweetBy = tweetBy;
+		this.tweet = tweet;
+	}
 
-    public Tweet(String userName, String message, String date) {
-        mUserName = userName;
-        mMessage = message;
-        mIsBadTweet = LanguageInterpreter.CheckString(message);
-    }
+	public String getTweetBy() {
+		return tweetBy;
+	}
 
-    public String getmUserName() {
-        return mUserName;
-    }
+	public void setTweetBy(String tweetBy) {
+		this.tweetBy = tweetBy;
+	}
 
-    public String getmMessage() {
-        return mMessage;
-    }
+	public String getTweet() {
+		return tweet;
+	}
 
-    public boolean isIsBadTweet() {
-        return mIsBadTweet;
-    }
+	public void setTweet(String tweet) {
+		this.tweet = tweet;
+	}
+
 }

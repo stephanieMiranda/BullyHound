@@ -30,7 +30,7 @@ public class JsonParse {
                 JSONObject element = statusesArray.getJSONObject(i);
                 String name = element.getJSONObject("entities").getJSONArray("user_mentions").getJSONObject(1).get("screen_name").toString();
                 String message = element.getJSONObject("text").toString();
-                Tweet newTweet = new Tweet(name, message, null);
+                Tweet newTweet = new Tweet(name, message);
                 outputList.add(newTweet);
             } catch (JSONException je2) {
                 Log.e("ArrayList", "Failure in getStatuses()");
