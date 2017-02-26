@@ -10,7 +10,7 @@ public class Tweet {
     public Tweet(String userName, String message, String date) {
         mUserName = userName;
         mMessage = message;
-        mIsBadTweet = LanguageInterpreter.checkString(message);
+        mIsBadTweet = LanguageInterpreter.CheckString(message);
     }
 
     public String getmUserName() {
