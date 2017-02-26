@@ -1,6 +1,3 @@
-/**
- * Created by aassadjr on 2/25/2017.
- */
 
 package com.example.rrudz.bullyhound;
 
@@ -13,11 +10,12 @@ public class LanguageInterpreter {
 
     static String[] badWords = Resources.getSystem().getStringArray(R.array.bad_words);
 
-    public static boolean CheckString(String inputStr){
-        for(String current : badWords){
-            if(inputStr.toLowerCase().contains(current.toLowerCase()))
+    public static boolean CheckString(String inputStr) {
+        for (String current : badWords) {
+            if (inputStr.toLowerCase().contains(current.toLowerCase()))
                 return true;
         }
         return false;
     }
 }
+
